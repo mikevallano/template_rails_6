@@ -7,11 +7,15 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  <div className='container'>
+    <h3>Hello {props.name}!</h3>
+    <p>Find me in {props.path}.</p>
+  </div>
 )
 
 Hello.defaultProps = {
-  name: 'David'
+  name: 'David',
+  path: 'app/javascript/packs/hello_react.jsx'
 }
 
 Hello.propTypes = {
